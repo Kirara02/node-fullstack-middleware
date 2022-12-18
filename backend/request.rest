@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJLdXJ1bWkgVG9raXNha2kiLCJlbWFpbCI6Imt1cnVtaUBnbWFpbC5jb20iLCJpYXQiOjE2NzEzNTczNTEsImV4cCI6MTY3MTM1NzM3MX0.HlfRR-L8NGrMl-o6e-DvX9yFqiS1T42scYgZVw1FYeg
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Kurumi Tokisaki",
+    "email": "kurumi@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "kurumi@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
