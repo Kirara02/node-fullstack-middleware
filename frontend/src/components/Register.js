@@ -88,6 +88,9 @@ const Register = () => {
                     Register
                   </button>
                 </div>
+                <div className="field">
+                  Sudah punya akun? <a href="http://localhost:3000">Login</a>
+                </div>
               </form>
             </div>
           </div>
